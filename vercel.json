@@ -1,0 +1,20 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+ 
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+
+        { "key": "Cache-Control", "value": "public, max-age=86400" },
+
+
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none';"
+        }
+      ]
+    }
+  ]
+}
